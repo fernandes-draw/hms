@@ -1,4 +1,4 @@
-import { Menu, Button, Text, Avatar } from "@mantine/core";
+import { Menu, Button, Text, Avatar } from '@mantine/core';
 import {
   IconSettings,
   IconSearch,
@@ -6,15 +6,15 @@ import {
   IconMessageCircle,
   IconTrash,
   IconArrowsLeftRight,
-} from "@tabler/icons-react";
+} from '@tabler/icons-react';
 
 const ProfileMenu = () => {
   return (
-    <Menu shadow="md" width={200}>
+    <Menu shadow='md' width={200}>
       <Menu.Target>
-        <div className="flex items-center gap-3">
-          <span>Everson</span>
-          <Avatar src="avatar.png" alt="it's me" />
+        <div className='flex items-center gap-3 cursor-pointer'>
+          <span className='font-medium text-lg text-neutral-900'>Everson</span>
+          <Avatar src='avatar.png' variant='filled' size={45} alt="it's me" />
         </div>
       </Menu.Target>
 
@@ -28,7 +28,7 @@ const ProfileMenu = () => {
         <Menu.Item
           leftSection={<IconSearch size={14} />}
           rightSection={
-            <Text size="xs" c="dimmed">
+            <Text size='xs' c='dimmed'>
               ⌘K
             </Text>
           }
@@ -42,7 +42,7 @@ const ProfileMenu = () => {
         <Menu.Item leftSection={<IconArrowsLeftRight size={14} />}>
           Transfer my data
         </Menu.Item>
-        <Menu.Item color="red" leftSection={<IconTrash size={14} />}>
+        <Menu.Item color='red' leftSection={<IconTrash size={14} />}>
           Delete my account
         </Menu.Item>
       </Menu.Dropdown>
