@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Random = () => {
-  return <div className='min-h-[1600px]'>Random</div>;
+  return <div className=''>Random</div>;
 };
 
 export default Random;
